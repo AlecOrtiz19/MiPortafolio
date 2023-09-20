@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="envio.php" method="post" target="_blank">
+        <label for=""><strong><em>Nombre:</em></strong></label>
+        <input type="text" id="identificador"  name="nombre" size="25px" maxlength="20" minlength="10" pattern="[A-Za-z]{9}" >
+        <input type="email">
+        <small>Este campo es obligatorio</small>
+        <small>Debe tener 9 caracteres</small>
+        <br>
+        <label for=""><strong><em>Contraseña:</em></strong></label>
+        <input type="password" size="22px" pattern="[A-Za-z]{9}" maxlength="20" minlength="10" >
+        <small>Es obligatorio este campo</small>
+        <br>
+        <input type="checkbox" name="condiciones" id="conciones" value="HTML">HTML
+        <input type="checkbox" name="condiciones" id="conciones" value="CSS">CSS
+        <input type="checkbox" name="condiciones" id="conciones" value="JavaScript">JavaScript
+        <input type="checkbox" name="condiciones" id="conciones" value="Boostrap">Boostrap
+        <br>
+        <input type="radio" name="condiciones" id="conciones" value="HTML">HTML
+        <input type="radio" name="condiciones" id="conciones" value="CSS">CSS
+        <input type="radio" name="condiciones" id="conciones" value="JavaScript">JavaScript
+        <input type="radio" name="condiciones" id="conciones" value="Boostrap">Boostrap
+        <br>
+        <label for=""><strong><em>Años programando:</em></strong></label>
+        <input type="number" placeholder="años programando">
+        <br>
+        <label for=""><strong><em>Subir archivo</em></strong></label>
+        <input type="file" multiple>
+        <br>
+        <label for=""><strong><em>Opinion:</em></strong></label>
+        <textarea name="opinion" id="opinion" cols="15" rows="5"></textarea>
+        <br>
+        <br>
+        <label for=""><strong><em>Selecciona pais de origen</em></strong></label>
+        <select name="pais" id="pais">
+            <optgroup label="America">
+                <option value="Ecuador" selected="selected">Ecuador</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Peru">Peru</option>
+                <option value="Bolivia">Bolivia</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Italia">Italia</option>
+                <option value="Inglaterr">Inglaterra</option>
+
+            </optgroup>
+            
+        </select>
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Resetear formulario">
+
+        <br><br>
+
+        <input type="button" onclick="alert('Alerta de la pagina')" value="BOTON">
+        <br><br>
+        <label for=""><strong><em>Fecha de ingreso</em></strong></label>
+        <input type="date">
+    </form>
+       
+</body>
+</html>
